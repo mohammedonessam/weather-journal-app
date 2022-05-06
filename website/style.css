@@ -1,0 +1,195 @@
+body{
+    background:  grey;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+}
+
+#app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:100vh;
+    background: gray;
+    color: floralwhite;
+    justify-content: center;
+    grid-gap: 2em;
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 15px;
+    background-image: url(./sky.png);
+}
+
+
+#zip,
+#generate,
+#feelings{
+    background: #17053866;
+    margin: 0;
+    width: 100%;
+    outline: outset;
+    border: outset;
+    border-radius: 40px;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    color: aliceblue;
+    display: block;
+    font-size: 15px;
+    resize: none;
+}
+
+#zip::placeholder,
+#feelings::placeholder{
+    color: aliceblue;
+    font-family: sans-serif;
+    line-height: 38px;
+    text-align: center;
+    display: block;
+    align-items: center;
+}
+
+#generate{
+    width: 150%;
+    margin-top: 0px;
+    background-color: #444;
+    cursor: pointer;
+}
+
+
+.entry{
+    background: #07133340;
+    margin: 0;
+    border-radius: 10px;
+    height: 200px;
+    width: 70%;
+    filter: blur(0.5px);
+    border: outset;
+}
+
+#entryHolder{
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 33%;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    font-size: 1.5vw;
+}
+
+#small{
+    display: block;
+    color: orange;
+    font-size: 1em;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+    height: 1em;
+    box-sizing:content-box;
+    margin: 0.5em;
+    border: 0;
+}
+
+#date{
+    font-size: 2vw;
+}
+
+#temp{
+    font-size: 4vw;
+}
+#city{
+    font-size: 2vw;
+    color: gold;
+
+}
+
+#content{
+    font-size: 2vw;
+    color: gold;
+
+}
+
+.headline {
+    color: aliceblue;
+    font-size: 25px;
+    background-color: #444;
+    padding: 20px;
+    text-align: center;
+    border-radius: 50%;
+    outline: outset;
+    border: outset;
+
+}
+.title{
+    padding: 15px 12em;
+    text-align: center;
+    font-size: 17px;
+    width: auto;
+    filter: brightness(10);
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label{
+    display:block;
+    font-size: 27px;
+    padding: 10px;
+    text-align: center;
+}
+
+input{
+    display:block;
+    height: 60px;
+    width: 320px;
+    background:#22b2da;
+    color: #f0d43a;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+}
+
+button{
+    width: 100px;
+    height: 41px;
+    background: #3b4a6b;
+    color: #f0d43a;
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+    border: outset;
+    box-shadow: 2px 4px 5px #444;
+}
+h1{
+    font-size: 36px;
+}
+
+textarea{
+    background:#22b2da;
+    color: #f0d43a;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    height: 50px;
+}
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color:silver; 
+    font-family: 'Oswald', sans-serif;
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: silver; 
+    font-family: 'Oswald', sans-serif;
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: silver; 
+    font-family: 'Oswald', sans-serif;
+} 
